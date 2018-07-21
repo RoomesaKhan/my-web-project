@@ -1,0 +1,222 @@
+<html>
+<head>
+<title>BurgerBash(SE-46)</title>
+<link rel="stylesheet" href="stylep4.css" type="text/css" />
+<link rel="stylesheet" href="form.css" type="text/css" />
+
+
+       <script>
+            function openNav() {
+                  document.getElementById("myNav").style.width = "100%";
+                 }
+
+             function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                  }
+          </script>
+
+           <script>
+                 function ValidateForm()
+                        {
+   
+                            var a = document.myform.fullname.value;
+     
+                           if(!isNaN(a))
+                                {
+                                     alert("Please Enter Only Characters");
+                                       document.myform.fullname.select();
+                                        return false;
+                                  }
+
+
+                               var b = document.myform.contact.value;
+
+                          if(isNaN(b))
+                               {
+                                     alert("Please Enter Only Numbers");
+                                     document.myform.contact.select();
+
+                                      return false;
+                                     }
+
+                         if (b.length!=11)
+                                  {
+                                     alert("Your cell-no must have 11-digits");
+                                     document.myform.contact.select();
+
+                                       return false;
+                                   }
+
+                     var c=document.myform.email.value;
+
+
+                      if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(c)))  
+	                 	{ 
+	                            alert("You have entered an invalid email address!"); 
+  
+		                       document.myform.email.select();
+		                      return false;  
+		                       } 
+                        }
+                 </script>
+
+
+           </head>
+
+
+
+             <body background="V.jpg">
+
+                 <div class="mainheader">
+                     <img src="logo2.png">
+
+                  <nav><ul>
+     
+                     <li><a href="p1.html">Home</a></li>
+         
+                    <li><a href="show.html">Menu</a></li> 
+                   <li><a href="p3.html">Order Now</a></li>
+                      <li><a href="p4.html">Contact us</a></li>
+                 </ul></nav>
+
+               </div>
+
+            <div class="mainContent">
+    
+               <div class="topContent">
+            
+                  <img src="O.png" height="110px" width="560px">
+          
+
+               <table>     
+                    <tr>
+                        <td> UAN: </td>
+                        <td> 111-122-114 </td>
+                    </tr> 
+ 
+                     <tr>
+                       <td></td>
+                       <td> 111-112-522 </td>
+                     </tr>
+
+                     <tr>
+                     <td colspan="2">SHAHEED-MILLAT ROAD</td>
+                     </tr>
+ 
+                     <tr>
+                     <td colspan="2">SINDHI MUSLIM (SMCHS)</td>
+                     </tr>
+
+                     <tr>
+                     <td colspan="2">KHYABAN-E-RAHAT </td>
+                     </tr>
+
+                     
+                     <tr>
+                     <td colspan="2">UNIVERSITY ROAD </td>
+                     </tr>
+                     
+                     
+                     <tr>
+                     <td colspan="2">BADAR COMMERCIAL </td>
+                     </tr> 
+ 
+                     <tr>
+                     <td colspan="2"> contact.burgerBash@gmail.com </td>
+                     </tr> 
+                           
+
+                        <tr>
+                     <td colspan="2"><input type="button" onclick="openNav()" value="Fill feedback form"></td>
+                     </tr>                  
+           </table>
+          </div>
+      
+    </div>
+
+     
+      <div class="mainfooter">
+          <p> 2016 Burger Bash All Rights Reserved </p>
+      </div>
+
+
+
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+                            <form name="myform" onsubmit="return ValidateForm();">
+                  <h2 align="center">FEEDBACK FORM</h2>
+                <table class="overlay-content" style="height:450px; width:700px;">
+                    
+                        <tr> 
+                            <td width="250px" > Name: </td>
+                            <td><input type="text" name="fullname" required placeholder="e.g Ali"></td>
+                         </tr>
+                      
+                           <tr>
+                                 <td width="250px" >Gender: </td> 
+                                  <td>
+                                    <input type="radio" value="Yes">Male
+                                    <input type="radio" value="Yes">Female 
+                                    
+                                  </td>
+                         </tr>                          
+
+
+                         <tr> 
+                                 <td width="250px" >Contact No: </td>
+                                 <td><input type="text" name="contact" required  placeholder="Only cell-number" ></td>
+                          </tr>
+                           
+
+
+                            <tr> 
+                                 <td width="250px" >Email: </td>
+                                 <td><input type="text" name="email" required  placeholder="e.g abc@gmail.com" ></td>
+                          </tr> 
+ 
+
+                         <tr>
+                            <td width="250px" >Choose what you like most: </td>
+                            <td width="200px">
+                                <select size="1" name="choice"> 
+                                     <option>-Please Choose-</option>
+                                     <option>Burgers</option>
+                                     <option>Shakes</option>
+                                      <option>Fries</option>
+                                      <option>Sandwiches</option>
+                                      <option>Pizza</option>
+                                </select>
+                             </td> 
+                         </tr>
+
+                         <tr>
+                                 <td width="250px" >Do you like to order again: </td> 
+                                  <td>
+                                    <input type="checkbox" value="Yes">Yes
+                                    <input type="checkbox" value="Yes">No 
+                                    
+                                  </td>
+                         </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+                                <tr height="70px">
+                                 <td width="250px" valign="top">Comments:</td>
+                                 <td><textarea cols="55" rows="7"  name="comment" placeholder="Your comments here..." style="background-color:#DCDCDC;border: 2px solid #20B2AA;"></textarea></td>
+                           </tr>
+                      
+            
+     
+ <tr>
+                                 <td width="200px"></td>
+         <td align="center"><input type="submit" value="SUBMIT" ></td>
+           
+</tr>
+      </table>
+
+          </form>                        
+  </div>
+</div>
+
+</body>
+</html>

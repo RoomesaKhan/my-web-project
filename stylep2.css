@@ -1,0 +1,206 @@
+body {
+color: orange;
+font-size: 16px;
+font-family: serif;
+text-align: left;
+line-height:1.5;
+background-size:cover;
+margin:0 auto;
+width: 850px;
+}
+
+.mainheader
+{
+height:395px;}
+
+.mainheader a{
+text-decoration:none;
+font-size:20px;
+border-radius:10px}
+
+
+
+.mainheader a:hover , .mainheader a:active {
+background-color:#CD7F32;
+}
+
+.mainheader img{
+width: 780px;
+height: 330px;
+margin: 20 0 0 0;
+line-height:0px;
+}
+
+
+.mainheader nav{
+border: 1px solid yellow;
+background-color:#300000  ;
+height: 50px;
+border-radius: 10px;
+}
+
+.mainheader nav ul {
+list-style: none;
+margin: 0 auto;
+}
+
+.mainheader nav ul li{
+float: left;
+font-style: normal;
+}
+
+
+
+
+.dockheader {
+height:90px;}
+
+
+.dockheader nav{
+width:600px;
+margin:0 auto;
+border: 1px solid yellow;
+background-color:#300000  ;
+height: 82px;
+border-radius: 10px;
+}
+
+.dockheader nav ul {
+list-style: none;
+margin: 0 auto;
+}
+
+.dockheader nav ul li{
+float: left;
+font-style: normal;
+padding-left:45px;
+}
+
+
+
+.dockheader img{
+ transition:all 0.3s ease;
+}
+
+.dockheader img:hover
+{         border-radius:10%;
+          -webkit-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        transform: scale(1.6);
+}
+
+
+
+
+
+ .mainheader a:link, .mainheader a:visited 
+{
+color: white;
+display: inline-block;
+padding: 5px 40px;
+height: 48px;
+}
+
+.mainContent{
+line-height:20px;
+border-radius:10px;
+width:53em;
+float:left;
+ 
+}
+
+
+
+
+.topcontent{ 
+background-color:#383838 ;
+column-gap: 40px;
+column-count: 3;
+border-radius:10px;
+padding: 5px 5px;
+margin-top: 5px;
+height:40em;
+border: 1px solid yellow;
+}
+
+.mainfooter {
+border: 1px solid yellow;
+width: 850px;
+float:left;
+background-color: #300000  ;
+border-radius:10px;
+margin-top: 5px;
+}
+
+
+.mainfooter p{
+
+font-style: normal;
+line-height:5px;
+color:white;
+padding: 10 10; 
+padding-left:20px;}
+
+
+
+* {box-sizing:border-box}
+body {font-family: serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
